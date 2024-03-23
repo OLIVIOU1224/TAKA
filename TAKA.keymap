@@ -1,0 +1,25 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    1    |    2    |    3    |    4    |    5    |    6    |                                          |    7    |    8    |    9    |    0    |    -    |    =    |   BSPC  |
+// |   CAPS  |    Q    |    W    |    E    |    R    |    T    |    Y    |                                          |    Y    |    U    |    I    |    O    |    P    |    [    |    ]    |
+// |   TAB   |    A    |    S    |    D    |    F    |    G    |    H    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |  ENTER  |
+// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |    T    |                                          |    B    |    N    |    M    |    ,    |    .    |    /    |  SHIFT  |
+//           |   CTRL  |   ALT   |   APP   |   BSPC  |  SPACE  |  SPACE  |                                          |  SPACE  |  SPACE  |   BSPC  |   APP   |   ALT   |   CTRL  |
+            bindings = <
+    &kp ESC    &kp 1    &kp 2    &kp 3     &kp 4     &kp 5     &kp 6                                                 &kp 7     &kp 8     &kp 9     &kp 0     &kp MINS  &kp EQL  &kp BSPC
+    &kp CAPS   &kp Q    &kp W    &kp E     &kp R     &kp T     &kp Y                                                 &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBRC &kp RBRC
+    &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G     &kp H                                                 &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT  &kp ENT
+    &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B     &kp T                                                 &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHIFT
+               &kp LCTRL&kp LALT &kp APP   &kp BSPC  &kp SPACE &kp SPACE                                             &kp SPACE &kp SPACE &kp BSPC  &kp APP   &kp RALT  &kp RCTRL
+            >;
+
+        };
+    };
+};
