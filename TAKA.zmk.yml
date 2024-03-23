@@ -3,7 +3,7 @@ id: TAKA
 name: TAKA
 type: shield
 url: https://github.com/OLIVIOU1224/TAKA/
-requires: [nrfmicro_13_52833]
+requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
