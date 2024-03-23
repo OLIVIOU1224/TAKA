@@ -1,0 +1,12 @@
+file_format: "1"
+id: TAKA
+name: TAKA
+type: shield
+url: https://github.com/OLIVIOU1224/TAKA/
+requires: [nrfmicro_13_52833]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - TAKA_left
+  - TAKA_right
